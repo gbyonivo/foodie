@@ -1,12 +1,12 @@
-import { StyleSheet, TextInput, type TextInputProps } from "react-native";
+import { StyleSheet, TextInput, type TextInputProps } from 'react-native'
 
-import { useThemeColor } from "@/hooks/useThemeColor";
+import { useThemeColor } from '@/hooks/useThemeColor'
 
 export type ThemedTextInputProps = TextInputProps & {
-  lightColor?: string;
-  darkColor?: string;
-  large?: boolean;
-};
+  lightColor?: string
+  darkColor?: string
+  large?: boolean
+}
 
 export function ThemedTextInput({
   style,
@@ -17,13 +17,13 @@ export function ThemedTextInput({
 }: ThemedTextInputProps) {
   const color = useThemeColor({
     override: { light: lightColor, dark: darkColor },
-    colorName: "text",
-  });
+    colorName: 'text',
+  })
 
   const borderColor = useThemeColor({
     override: { light: lightColor, dark: darkColor },
-    colorName: "border",
-  });
+    colorName: 'border',
+  })
 
   return (
     <TextInput
@@ -34,17 +34,17 @@ export function ThemedTextInput({
       ]}
       {...rest}
     />
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   large: {
     fontSize: 24,
     lineHeight: 24,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   normal: {
     fontSize: 16,
     lineHeight: 20,
   },
-});
+})

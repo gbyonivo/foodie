@@ -4,22 +4,22 @@ import {
   TouchableOpacity,
   TouchableOpacityProps,
   ViewStyle,
-} from "react-native";
+} from 'react-native'
 
-import { useThemeColor } from "@/hooks/useThemeColor";
-import { ThemedText } from "./ThemedText";
-import { ThemedView } from "./ThemedView";
+import { useThemeColor } from '@/hooks/useThemeColor'
+import { ThemedText } from './ThemedText'
+import { ThemedView } from './ThemedView'
 
 export type ThemedViewProps = TouchableOpacityProps & {
-  lightColor?: string;
-  darkColor?: string;
-  safeArea?: boolean;
-  label: string;
-  loading?: boolean;
-  disabled?: boolean;
-  style?: StyleProp<ViewStyle>;
-  touchableOpacityStyle?: StyleProp<ViewStyle>;
-};
+  lightColor?: string
+  darkColor?: string
+  safeArea?: boolean
+  label: string
+  loading?: boolean
+  disabled?: boolean
+  style?: StyleProp<ViewStyle>
+  touchableOpacityStyle?: StyleProp<ViewStyle>
+}
 
 export function ThemedButton({
   style,
@@ -33,16 +33,16 @@ export function ThemedButton({
   ...otherProps
 }: ThemedViewProps) {
   const backgroundColor = useThemeColor({
-    colorName: "onBackground",
+    colorName: 'onBackground',
     override: { light: lightColor, dark: darkColor },
-  });
+  })
 
   const textColor = useThemeColor({
-    colorName: "textTertiary",
+    colorName: 'textTertiary',
     override: { light: lightColor, dark: darkColor },
-  });
+  })
 
-  const textStyle = { color: textColor };
+  const textStyle = { color: textColor }
 
   return (
     <TouchableOpacity
@@ -56,7 +56,7 @@ export function ThemedButton({
         </ThemedText>
       </ThemedView>
     </TouchableOpacity>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -66,9 +66,9 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
     borderRadius: 10,
-    alignSelf: "flex-start",
+    alignSelf: 'flex-start',
   },
   text: {
-    alignSelf: "center",
+    alignSelf: 'center',
   },
-});
+})

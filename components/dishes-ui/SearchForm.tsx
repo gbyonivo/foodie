@@ -1,18 +1,18 @@
-import { ThemedTextInput } from "@/components/common/ThemedTextInput";
-import { getWidthByRatio } from "@/constants/utils";
-import { useRouter } from "expo-router";
-import { useState } from "react";
-import { StyleProp, StyleSheet, View, ViewStyle } from "react-native";
-import { ThemedButton } from "../common/ThemedButton";
-import { ThemedView } from "../common/ThemedView";
+import { ThemedTextInput } from '@/components/common/ThemedTextInput'
+import { getWidthByRatio } from '@/constants/utils'
+import { useRouter } from 'expo-router'
+import { useState } from 'react'
+import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
+import { ThemedButton } from '../common/ThemedButton'
+import { ThemedView } from '../common/ThemedView'
 
 interface SearchFormProps {
-  containerStyle?: StyleProp<ViewStyle>;
+  containerStyle?: StyleProp<ViewStyle>
 }
 
 export function SearchForm({ containerStyle }: SearchFormProps) {
-  const [searchQuery, setSearchQuery] = useState("");
-  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState('')
+  const router = useRouter()
 
   return (
     <View style={styles.container}>
@@ -29,26 +29,26 @@ export function SearchForm({ containerStyle }: SearchFormProps) {
         />
       </ThemedView>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   textInput: {
-    textAlign: "center",
+    textAlign: 'center',
     borderWidth: 2,
     padding: 12,
     borderRadius: 12,
     fontSize: 16,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     width: getWidthByRatio(0.8),
   },
   innerContainer: {
     gap: 32,
   },
   buttonContainer: {
-    alignSelf: "center",
+    alignSelf: 'center',
   },
-});
+})

@@ -1,9 +1,9 @@
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import { Stack, useRouter } from "expo-router";
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { IconSymbol } from '@/components/ui/IconSymbol'
+import { Stack, useRouter } from 'expo-router'
+import { StyleSheet, TouchableOpacity } from 'react-native'
 
 export default function Layout() {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <Stack>
@@ -11,7 +11,7 @@ export default function Layout() {
         name="index"
         options={{
           headerShown: true,
-          headerTitle: "Dish",
+          headerTitle: 'Dish',
           headerLeft: () => (
             <TouchableOpacity onPress={() => router.back()}>
               <IconSymbol
@@ -25,11 +25,11 @@ export default function Layout() {
         }}
       />
     </Stack>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   backButton: {
     marginLeft: 16,
   },
-});
+})

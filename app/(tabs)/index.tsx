@@ -1,23 +1,23 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native'
 
-import ParallaxScrollView from "@/components/common/ParallaxScrollView";
-import { ThemedText } from "@/components/common/ThemedText";
-import { ThemedView } from "@/components/common/ThemedView";
-import { SearchForm } from "@/components/dishes-ui/SearchForm";
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import { useThemeColor } from "@/hooks/useThemeColor";
+import ParallaxScrollView from '@/components/common/ParallaxScrollView'
+import { ThemedText } from '@/components/common/ThemedText'
+import { ThemedView } from '@/components/common/ThemedView'
+import { SearchForm } from '@/components/dishes-ui/SearchForm'
+import { IconSymbol } from '@/components/ui/IconSymbol'
+import { useThemeColor } from '@/hooks/useThemeColor'
 
 export default function HomeScreen() {
   const titleColor = useThemeColor({
-    colorName: "text",
-  });
+    colorName: 'text',
+  })
   const dark = useThemeColor({
-    colorName: "primaryDark",
-  });
+    colorName: 'primaryDark',
+  })
 
   const light = useThemeColor({
-    colorName: "primaryLight",
-  });
+    colorName: 'primaryLight',
+  })
 
   return (
     <ParallaxScrollView
@@ -40,7 +40,7 @@ export default function HomeScreen() {
         </ThemedView>
       </ThemedView>
     </ParallaxScrollView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -55,12 +55,12 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   headerImage: {
-    color: "#808080",
+    color: '#808080',
     bottom: -90,
     left: -35,
-    position: "absolute",
+    position: 'absolute',
   },
   title: {
-    textAlign: "center",
+    textAlign: 'center',
   },
-});
+})

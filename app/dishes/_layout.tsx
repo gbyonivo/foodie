@@ -1,9 +1,9 @@
-import { Header } from "@/components/common/Header";
-import { Stack, useRouter } from "expo-router";
-import { StyleSheet } from "react-native";
+import { Header } from '@/components/common/Header'
+import { Stack, useRouter } from 'expo-router'
+import { StyleSheet } from 'react-native'
 
 export default function Layout() {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Stack>
       <Stack.Screen
@@ -15,11 +15,11 @@ export default function Layout() {
       />
       <Stack.Screen name="[id]" options={{ headerShown: false }} />
     </Stack>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   backButton: {
     marginLeft: 16,
   },
-});
+})
