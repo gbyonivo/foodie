@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import React from "react";
-import { Platform, StyleSheet } from "react-native";
+import { Platform } from "react-native";
 
 import { HapticTab } from "@/components/common/HapticTab";
 import { IconSymbol } from "@/components/ui/IconSymbol";
@@ -24,6 +24,11 @@ export default function TabLayout() {
           },
           default: {},
         }),
+        header: () => null,
+        headerShown: false,
+        headerStyle: {
+          display: "none",
+        },
       }}
       backBehavior="none"
       initialRouteName="index"
@@ -35,7 +40,8 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="fork.knife" color={color} />
           ),
-          ...commonProps,
+          header: () => null,
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -45,19 +51,9 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <IconSymbol size={28} name="chart.bar.fill" color={color} />
           ),
+          headerShown: false,
         }}
       />
     </Tabs>
   );
 }
-
-const styles = StyleSheet.create({
-  tabBarLabel: {
-    display: "none",
-  },
-});
-
-const commonProps = {
-  headerShown: false,
-  tabBarLabelStyle: styles.tabBarLabel,
-};
