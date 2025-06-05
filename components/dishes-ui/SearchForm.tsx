@@ -1,5 +1,5 @@
 import { ThemedTextInput } from '@/components/common/ThemedTextInput'
-import { getWidthByRatio } from '@/constants/utils'
+import { getWidthByRatio } from '@/utils/common'
 import { useRouter } from 'expo-router'
 import { useState } from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
