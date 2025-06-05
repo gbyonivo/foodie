@@ -9,10 +9,9 @@ export default function Layout() {
         name="index"
         options={{
           headerShown: true,
-          header: () => <Header title="Dishes" onBack={() => router.back()} />,
+          header: () => <Header title="Graph" onBack={() => router.back()} />,
         }}
       />
-      <Stack.Screen name="[id]" options={{ headerShown: false }} />
     </Stack>
   )
 }

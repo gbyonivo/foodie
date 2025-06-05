@@ -3,76 +3,76 @@
  * Colors are defined for both light and dark modes with proper contrast ratios.
  */
 
-const tintColorLight = 'rgb(10, 126, 164)'
-const tintColorDark = 'rgb(255, 255, 255)'
+const tintColorLight = '#0A7EA4'
+const tintColorDark = '#FFFFFF'
 
 export const Colors = {
   light: {
     // Primary colors
-    primary: 'rgb(10, 126, 164)',
-    primaryDark: 'rgb(8, 102, 136)',
-    primaryLight: 'rgb(13, 150, 194)',
+    primary: '#0A7EA4',
+    primaryDark: '#086688',
+    primaryLight: '#0D96C2',
 
     // Text colors
-    text: 'rgb(17, 24, 28)',
-    textSecondary: 'rgb(104, 112, 118)',
-    textTertiary: 'rgb(136, 144, 150)',
+    text: '#000000',
+    textSecondary: '#687076',
+    textTertiary: '#889096',
 
     // Background colors
-    background: 'rgb(255, 255, 255)',
-    backgroundSecondary: 'rgb(248, 249, 250)',
-    backgroundTertiary: 'rgb(241, 243, 245)',
+    background: '#FFFFFF',
+    backgroundSecondary: '#F8F9FA',
+    backgroundTertiary: '#F1F3F5',
 
     // Status colors
-    success: 'rgb(46, 204, 113)',
-    warning: 'rgb(241, 196, 15)',
-    error: 'rgb(231, 76, 60)',
-    info: 'rgb(52, 152, 219)',
+    success: '#2ECC71',
+    warning: '#F1C40F',
+    error: '#E74C3C',
+    info: '#3498DB',
 
     // UI element colors
-    border: 'rgb(233, 236, 239)',
-    divider: 'rgb(222, 226, 230)',
+    border: '#E9ECEF',
+    divider: '#DEE2E6',
     overlay: 'rgba(0, 0, 0, 0.5)',
 
     // Navigation colors
     tint: tintColorLight,
-    icon: 'rgb(104, 112, 118)',
-    tabIconDefault: 'rgb(104, 112, 118)',
+    icon: '#687076',
+    tabIconDefault: '#687076',
     tabIconSelected: tintColorLight,
-    onBackground: 'rgb(0, 0, 0)',
+    onBackground: '#000000',
   },
   dark: {
     // Primary colors
-    primary: 'rgb(13, 150, 194)',
-    primaryDark: 'rgb(10, 126, 164)',
-    primaryLight: 'rgb(16, 179, 224)',
+    primary: '#0D96C2',
+    primaryDark: '#0A7EA4',
+    primaryLight: '#10B3E0',
 
     // Text colors
-    text: 'rgb(236, 237, 238)',
-    textSecondary: 'rgb(155, 161, 166)',
-    textTertiary: 'rgb(108, 112, 117)',
+    text: '#ECEDEE',
+    textSecondary: '#9BA1A6',
+    textTertiary: '#6C7075',
 
     // Background colors
-    background: 'rgb(21, 23, 24)',
-    backgroundSecondary: 'rgb(28, 31, 32)',
-    backgroundTertiary: 'rgb(35, 38, 39)',
+    background: '#151718',
+    backgroundSecondary: '#1C1F20',
+    backgroundTertiary: '#232627',
 
     // Status colors
-    success: 'rgb(46, 204, 113)',
-    warning: 'rgb(241, 196, 15)',
-    error: 'rgb(231, 76, 60)',
-    info: 'rgb(52, 152, 219)',
+    success: '#2ECC71',
+    warning: '#F1C40F',
+    error: '#E74C3C',
+    info: '#3498DB',
 
     // UI element colors
-    border: 'rgb(45, 50, 53)',
-    divider: 'rgb(55, 59, 62)',
+    border: '#2D3235',
+    divider: '#373B3E',
     overlay: 'rgba(0, 0, 0, 0.7)',
 
     // Navigation colors
     tint: tintColorDark,
-    icon: 'rgb(155, 161, 166)',
-    tabIconDefault: 'rgb(155, 161, 166)',
+    icon: '#9BA1A6',
+    tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
-    onBackground: 'rgb(255, 255, 255)',
+    onBackground: '#FFFFFF',
   },
 }

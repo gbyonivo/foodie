@@ -1,9 +1,10 @@
 import { useThemeColor } from '@/hooks/useThemeColor'
 import { useRouter } from 'expo-router'
-import { SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native'
+import { StyleSheet, TouchableOpacity } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { IconSymbol } from '../ui/IconSymbol'
 import { ThemedText } from './ThemedText'
+import { ThemedView } from './ThemedView'
 
 interface HeaderProps {
   title: string
@@ -16,7 +17,7 @@ export const Header = ({ title, onBack }: HeaderProps) => {
   const { top } = useSafeAreaInsets()
 
   return (
-    <SafeAreaView style={styles.container}>
+    <ThemedView safeArea style={styles.container}>
       <ThemedText style={[styles.title]}>{title}</ThemedText>
       <TouchableOpacity
         style={[styles.backButton, { top }]}
@@ -29,7 +30,7 @@ export const Header = ({ title, onBack }: HeaderProps) => {
       >
         <IconSymbol name="chevron.left" size={24} color={iconColor} />
       </TouchableOpacity>
-    </SafeAreaView>
+    </ThemedView>
   )
 }
 

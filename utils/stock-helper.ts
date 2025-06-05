@@ -17,6 +17,6 @@ export const calculatePercentageChange = (
 ): string => {
   if (openPrice === 0) return '0.00%'
   // todo: research the calculation
-  const percentage = (closePrice - openPrice) / openPrice / 1000
+  const percentage = (closePrice - openPrice) / openPrice
   return `${percentage.toFixed(2)}%`
 }

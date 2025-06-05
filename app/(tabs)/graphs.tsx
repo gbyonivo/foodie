@@ -1,5 +1,5 @@
-import { GraphScreen } from '@/components/screens/graph-screen'
+import { GraphsScreen } from '@/components/screens/graphs-screen'
 
 export default function Graphs() {
-  return <GraphScreen />
+  return <GraphsScreen />
 }
