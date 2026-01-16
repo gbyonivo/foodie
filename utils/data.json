@@ -1,0 +1,76 @@
+[
+  {
+    "symbol": "AAPL",
+    "results": [
+      {
+        "openPrice": 0.17235,
+        "highPrice": 0.17321,
+        "lowPrice": 0.17198,
+        "closePrice": 0.17289,
+        "volume": 24567890,
+        "timestamp": 1717545600000
+      },
+      {
+        "openPrice": 0.17289,
+        "highPrice": 0.174,
+        "lowPrice": 0.1725,
+        "closePrice": 0.1738,
+        "volume": 19876543,
+        "timestamp": 1717632000000
+      },
+      {
+        "openPrice": 0.1738,
+        "highPrice": 0.1751,
+        "lowPrice": 0.1736,
+        "closePrice": 0.17495,
+        "volume": 21098765,
+        "timestamp": 1717718400000
+      },
+      {
+        "openPrice": 0.1738,
+        "highPrice": 0.1751,
+        "lowPrice": 0.1736,
+        "closePrice": 0.17495,
+        "volume": 21098765,
+        "timestamp": 1717768400000
+      }
+    ]
+  },
+  {
+    "symbol": "NNPC",
+    "results": [
+      {
+        "openPrice": 0.17435,
+        "highPrice": 0.17321,
+        "lowPrice": 0.17698,
+        "closePrice": 0.17289,
+        "volume": 24567890,
+        "timestamp": 1717545600000
+      },
+      {
+        "openPrice": 0.17289,
+        "highPrice": 0.174,
+        "lowPrice": 0.1725,
+        "closePrice": 0.1738,
+        "volume": 19876543,
+        "timestamp": 1717632000000
+      },
+      {
+        "openPrice": 0.1738,
+        "highPrice": 0.1751,
+        "lowPrice": 0.1736,
+        "closePrice": 0.17495,
+        "volume": 21098765,
+        "timestamp": 1717718400000
+      },
+      {
+        "openPrice": 0.1738,
+        "highPrice": 0.1751,
+        "lowPrice": 0.1736,
+        "closePrice": 0.17295,
+        "volume": 21098765,
+        "timestamp": 1717768400000
+      }
+    ]
+  }
+]
